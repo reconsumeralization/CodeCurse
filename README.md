@@ -1,0 +1,2 @@
+# CodeCurse
+CodeCurse AI IDE
