@@ -9,7 +9,12 @@ set -e
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
   cp -rp src/insider/* vscode/
 else
-  cp -rp src/stable/* vscode/
+  if [[ -d "src/stable" ]]; then
+    cp -rp src/stable/* vscode/
+  else
+    echo "'src/stable' directory not found"
+    exit 1
+  fi
 fi
 
 cp -f LICENSE vscode/LICENSE.txt
