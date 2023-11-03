@@ -81,7 +81,8 @@ else
     git am --3way --whitespace=fix ../../build/npm/gyp/patches/gyp_spectre_mitigation_support.patch
     npm install
 
-    npm_config_node_gyp="$( pwd )/bin/node-gyp.js"
+    pwd
+    npm_config_node_gyp="/bin/node-gyp.js"
     export npm_config_node_gyp
 
     cd ../..
@@ -97,7 +98,8 @@ fi
 setpath() {
   local jsonTmp
   { set +x; } 2>/dev/null
-  jsonTmp=$( jq --arg 'path' "${2}" --arg 'value' "${3}" 'setpath([$path]; $value)' "${1}.json" )
+  jq --arg 'path' "${2}" --arg 'value' "${3}" 'setpath([$path]; $value)' "${1}.json"
+  jsonTmp=$( cat "${1}.json" )
   echo "${jsonTmp}" > "${1}.json"
   set -x
 }
@@ -137,7 +139,8 @@ if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
   setpath "product" "nameShort" "VSCodium - Insiders"
   setpath "product" "nameLong" "VSCodium - Insiders"
   setpath "product" "applicationName" "codium-insiders"
-  setpath "product" "dataFolderName" ".vscodium-insiders"
+  jq --arg 'path' "${2}" --argjson 'value' "${3}" 'setpath([$path]; $value)' "${1}.json"
+  jsonTmp=$( cat "${1}.json" )
   setpath "product" "linuxIconName" "vscodium-insiders"
   setpath "product" "quality" "insider"
   setpath "product" "urlProtocol" "vscodium-insiders"
@@ -159,7 +162,9 @@ if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
 else
   setpath "product" "nameShort" "VSCodium"
   setpath "product" "nameLong" "VSCodium"
-  setpath "product" "applicationName" "codium"
+  jq -s '.[0] * .[1]' product.json ../product.json > temp.json
+  jsonTmp=$( cat temp.json )
+  rm temp.json
   setpath "product" "linuxIconName" "vscodium"
   setpath "product" "quality" "stable"
   setpath "product" "urlProtocol" "vscodium"
