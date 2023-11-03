@@ -1,5 +1,5 @@
 <div id="codecurse-logo" style="text-align:center;">
-    <img src="./icons/stable/codium_cnl.svg" alt="CodeCurse Logo" width="200" />
+    <img src="[./icons/stable/codium_cnl.svg](https://github.com/reconsumeralization/CodeCurse/blob/main/DALL%C2%B7E%202023-11-03%2017.41.56%20-%20Design%20an%20icon%20representing%20the%20merger%20of%20two%20cursors%20(one%20from%20Microsoft's%20VS%20Code%20and%20another%20symbolizing%20enhanced%20functionality).%20The%20background%20sh.png?raw=true)" alt="CodeCurse Logo" width="200" />
     <h1>CodeCurse</h1>
     <h3>The VSCodium Cursor Merger: An Open Source Enhancement without Telemetry</h3>
 </div>
