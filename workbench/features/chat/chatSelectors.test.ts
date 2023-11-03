@@ -1,7 +1,7 @@
-import * as chatSelectors from './chatSelectors';
-import { FullState } from '../window/state';
+import * as chatSelectors from "./chatSelectors";
+import { FullState } from "../window/state";
 
-describe('chatSelectors', () => {
+describe("chatSelectors", () => {
   let state: FullState;
 
   beforeEach(() => {
@@ -9,19 +9,19 @@ describe('chatSelectors', () => {
       chatState: {
         isCommandBarOpen: false,
         draftMessages: {},
-        currentConversationId: '1',
+        currentConversationId: "1",
         botMessages: [],
         generating: false,
         userMessages: [],
         chatIsOpen: false,
         chatHistoryIsOpen: false,
         fireCommandK: false,
-        msgType: 'freeform',
+        msgType: "freeform",
       },
     };
   });
 
-  test('getIsCommandBarOpen', () => {
+  test("getIsCommandBarOpen", () => {
     expect(chatSelectors.getIsCommandBarOpen(state)).toBe(false);
     state.chatState.isCommandBarOpen = true;
     expect(chatSelectors.getIsCommandBarOpen(state)).toBe(true);
