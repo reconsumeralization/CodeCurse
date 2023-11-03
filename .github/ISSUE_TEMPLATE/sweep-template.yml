@@ -1,6 +1,6 @@
 name: Sweep Issue
 title: 'Sweep: '
-description: For small bugs, features, refactors, and tests to be handled by Sweep, an AI-powered junior developer. CodeCurse is an evolution of Codium, integrating the workbench from a different repository. Ensure adherence to best practices and standards specific to this integration.
+description: Handle bugs, features, and refactors related to the workbench integration in CodeCurse.
 labels: sweep
 body:
   - type: textarea
