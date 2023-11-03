@@ -1,45 +1,15 @@
-# Sweep AI turns bugs & feature requests into code changes (https://sweep.dev)
-# For details on our config file, check out our docs at https://docs.sweep.dev/usage/config
-
-# Description of the repository and standards to follow
-description: "CodeCurse is an evolution of Codium, integrating the workbench from a different repository. Ensure adherence to best practices and standards specific to this integration."
-
-# The branch to run on
-branch: main
-
-# Whether or not to enable GitHub Actions
-gha_enabled: True
-
-# Directories that Sweep should not edit
-blocked_dirs: [".github/"]
-
-# Whether or not to create PRs as drafts
-draft: False
-
-# Documentation links for Sweep to refer to
-docs:
-  - Workbench: ["https://workbench-repo-link/docs", "Documentation for the workbench being integrated into CodeCurse"]
-  - CodeCurse: ["https://codecurse-repo-link/docs", "Documentation for CodeCurse"]
-
-# Sandbox settings for validating code changes
-sandbox:
-  install:
-    - pre-commit install
-    - pip install poetry
-    - poetry install
-  check:
-    - pre-commit run --files {file_path}
-    - 'if [[ "{file_path}" == *.py ]]; then poetry run pylint --errors-only {file_path}; else exit 0; fi'
-    - 'if [[ "{file_path}" == *.py ]]; then PYTHONPATH=. poetry run python {file_path}; else exit 0; fi'
-
-# Specific guidelines for Sweep to follow
-rules:
-  - "Leftover TODOs in the code, especially related to workbench integration, should be handled."
-  - "All new business logic, especially for workbench integrations, should have corresponding unit tests in the tests/ directory."
-  - "Any clearly inefficient or repeated code in the workbench integrations should be optimized or refactored."
-  - "All React components in the workbench should have PropTypes defined."
-  - "Update the README.md file whenever a new feature related to the workbench is added. Include a description of the feature and any new commands."
-  - "Remove any console.log statements before committing JavaScript code related to the workbench."
-  - "All docstrings and comments related to the workbench should be up to date."
-  - "Python error logs should use loguru. If they are under an exception, they should use traceback."
-  - "For every 'class.py' in the workbench, there should be a corresponding 'class_test.py' in the same directory."
+name: Sweep Issue
+title: 'Sweep: '
+description: For small bugs, features, refactors, and tests to be handled by Sweep, an AI-powered junior developer. CodeCurse is an evolution of Codium, integrating the workbench from a different repository. Ensure adherence to best practices and standards specific to this integration.
+labels: sweep
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Details
+      description: Provide specific details and context about the desired changes or improvements related to the workbench integration.
+      placeholder: |
+        Unit Tests: Write unit tests for workbench integrations in <FILE>. Ensure comprehensive coverage, especially for critical components.
+        Bugs: Investigate any issues in the workbench integrations located in <FILE>. Refer to the logs and documentation for more context.
+        Features: Enhance the workbench integrations by implementing new features or optimizing existing ones. Consider using classes or methods from <FILE> if relevant.
+        Refactors: Consider refactoring or optimizing the workbench integrations. If migrating or updating any functions, ensure compatibility with the rest of the workbench components.
