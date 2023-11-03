@@ -1,5 +1,5 @@
 import { FullState, Message } from '../window/state'
-import { createSelector } from '/mnt/data/vscodium-master/vscodium-master/src/stable/src/vs/workbench/libraries/reselect-master'
+import { createSelector } from '/mnt/data/vscodium-master/src/stable/src/vs/workbench/libraries/reselect-master'
 import { getLastBotMessage as getLastBotMessageMain } from './chatSlice'
 
 export const getIsCommandBarOpen = (state: FullState) =>
