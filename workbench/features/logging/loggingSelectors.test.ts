@@ -1,36 +1,36 @@
-import { getFeedbackMessage, getIsOpen } from './loggingSelectors';
-import { FullState } from '../window/state';
+import { getFeedbackMessage, getIsOpen } from "./loggingSelectors";
+import { FullState } from "../window/state";
 
-describe('getFeedbackMessage', () => {
+describe("getFeedbackMessage", () => {
   let state: FullState;
 
   beforeEach(() => {
     state = {
       loggingState: {
-        feedbackMessage: 'Test message',
+        feedbackMessage: "Test message",
         isOpen: false,
       },
     };
   });
 
-  test('should return correct feedback message', () => {
-    expect(getFeedbackMessage(state)).toBe('Test message');
+  test("should return correct feedback message", () => {
+    expect(getFeedbackMessage(state)).toBe("Test message");
   });
 });
 
-describe('getIsOpen', () => {
+describe("getIsOpen", () => {
   let state: FullState;
 
   beforeEach(() => {
     state = {
       loggingState: {
-        feedbackMessage: 'Test message',
+        feedbackMessage: "Test message",
         isOpen: false,
       },
     };
   });
 
-  test('should return correct isOpen value', () => {
+  test("should return correct isOpen value", () => {
     expect(getIsOpen(state)).toBe(false);
   });
 });
