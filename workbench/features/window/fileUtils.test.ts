@@ -30,7 +30,7 @@ import {
   getContentsIfNeeded,
 } from "./fileUtils";
 import { FullState, State, initialState } from "./state";
-import { connector } from "some-connector-module"; // replace with actual module
+import { connector } from "actual-connector-module";
 
 jest.mock("some-connector-module"); // replace with actual module
 
@@ -56,10 +56,29 @@ describe("getContentsIfNeeded", () => {
 
   test("should call connector.getFile if the file is not in the cache", async () => {
     const state: State = { ...initialState };
-    const mockGetFile = jest.fn();
-    mockGetFile.mockResolvedValue("Test contents from connector");
-    (connector.getFile as jest.Mock) = mockGetFile;
+    const mockGetFile = jest.fn().mockResolvedValue("Test contents from actual connector");
+    jest.spyOn(connector, 'getFile').mockImplementation(mockGetFile);
 
+    const contents = await getContentsIfNeeded(state, 1);
+    expect(contents).toBe("Test contents from connector");
+    expect(mockGetFile).toHaveBeenCalledWith(getPathForFileId(state, 1));
+  });
+});
+    import { connector } from "some-connector-module"; // replace with actual module
+    
+    jest.mock("actual-connector-module");
+    
+    describe("newCachedFile", () => {
+      test("should return a new CachedFile object with the given contents and a counter of 0", () => {
+        const contents = "Test contents";
+        const cachedFile = newCachedFile(contents);
+        expect(cachedFile).toEqual({ contents, counter: 0 });
+      });
+    });
+    
+    // ...similar describe and test blocks for other functions...
+    
+    describe("getContentsIfNeeded", () => {
     const contents = await getContentsIfNeeded(state, 1);
     expect(contents).toBe("Test contents from connector");
     expect(mockGetFile).toHaveBeenCalledWith(getPathForFileId(state, 1));
