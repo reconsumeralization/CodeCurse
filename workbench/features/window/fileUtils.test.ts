@@ -63,7 +63,6 @@ describe("getContentsIfNeeded", () => {
     expect(contents).toBe("Test contents from connector");
     expect(mockGetFile).toHaveBeenCalledWith(getPathForFileId(state, 1));
   });
-});
     import { connector } from "some-connector-module"; // replace with actual module
     
     jest.mock("actual-connector-module");
@@ -83,4 +82,3 @@ describe("getContentsIfNeeded", () => {
     expect(contents).toBe("Test contents from connector");
     expect(mockGetFile).toHaveBeenCalledWith(getPathForFileId(state, 1));
   });
-});
