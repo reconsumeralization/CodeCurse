@@ -1,8 +1,12 @@
-import { getLanguages, copilotStatus, languageServerStatus } from './languageServerSelector';
-import { LanguageServerState } from 'vs/workbench/features/window/state';
+import {
+  getLanguages,
+  copilotStatus,
+  languageServerStatus,
+} from "./languageServerSelector";
+import { LanguageServerState } from "vs/workbench/features/window/state";
 
-describe('getLanguages', () => {
-  test('should return correct languages', () => {
+describe("getLanguages", () => {
+  test("should return correct languages", () => {
     const state = {
       languageServerState: {
         languageServers: {
@@ -11,12 +15,12 @@ describe('getLanguages', () => {
         },
       },
     };
-    expect(getLanguages(state)).toEqual(['python', 'javascript']);
+    expect(getLanguages(state)).toEqual(["python", "javascript"]);
   });
 });
 
-describe('copilotStatus', () => {
-  test('should return correct copilot status', () => {
+describe("copilotStatus", () => {
+  test("should return correct copilot status", () => {
     const state = {
       languageServerState: {
         copilotSignedIn: true,
@@ -27,17 +31,19 @@ describe('copilotStatus', () => {
   });
 });
 
-describe('languageServerStatus', () => {
-  test('should return correct language server status', () => {
+describe("languageServerStatus", () => {
+  test("should return correct language server status", () => {
     const state = {
       languageServerState: {
         languageServers: {
-          python: { status: 'active' },
-          javascript: { status: 'inactive' },
+          python: { status: "active" },
+          javascript: { status: "inactive" },
         },
       },
     };
-    expect(languageServerStatus('python')(state)).toEqual({ status: 'active' });
-    expect(languageServerStatus('javascript')(state)).toEqual({ status: 'inactive' });
+    expect(languageServerStatus("python")(state)).toEqual({ status: "active" });
+    expect(languageServerStatus("javascript")(state)).toEqual({
+      status: "inactive",
+    });
   });
 });
