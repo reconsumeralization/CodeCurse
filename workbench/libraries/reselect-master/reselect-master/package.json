@@ -10,24 +10,6 @@
     ".": {
       "types": "./dist/reselect.d.ts",
       "import": "./dist/reselect.mjs",
-      "default": "./dist/cjs/reselect.cjs"
-    }
-  },
-  "files": [
-    "src",
-    "dist"
-  ],
-  "sideEffects": false,
-  "bugs": {
-    "url": "https://github.com/reduxjs/reselect/issues"
-  },
-  "scripts": {
-    "build": "tsup",
-    "clean": "rimraf dist",
-    "format": "prettier --write \"{src,test}/**/*.{js,ts}\" \"docs/**/*.md\"",
-    "lint": "eslint src test",
-    "prepack": "yarn build",
-    "bench": "vitest --run bench",
     "test": "node --expose-gc ./node_modules/vitest/dist/cli-wrapper.js run",
     "test:cov": "vitest run --coverage",
     "test:typescript": "tsc --noEmit -p typescript_test/tsconfig.json"
@@ -55,6 +37,16 @@
     "@typescript-eslint/eslint-plugin-tslint": "5.1.0",
     "@typescript-eslint/parser": "5.1.0",
     "eslint": "^8.0.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-typescript": "0.14.0",
+    "lodash.memoize": "^4.1.2",
+    "memoize-one": "^6.0.0",
+  }
+  }
+  
+  =======
+  }
+  }
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-typescript": "0.14.0",
     "lodash.memoize": "^4.1.2",
