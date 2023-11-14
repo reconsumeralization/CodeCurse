@@ -1,0 +1,351 @@
+repo_name: reconsumeralization/CodeCurse
+report_id: 72cf510d3d878551fcdf7b1cf670b0c1
+repo_type: Public
+timestamp: '2023-11-09T16:14:59+00:00'
+requested_by: reconsumeralization
+provider: github
+branch: main
+detected_tools_count: 28
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source: Repo Metadata
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: Redux
+  description: Predictable state container for JavaScript apps
+  website_url: https://redux.js.org/
+  version: 4.2.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: State Management Library
+  image_url: https://img.stackshare.io/service/4074/13142323.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-03 21:35:48.000000000 Z
+- name: Codecov
+  description: Hosted coverage reports with awesome features to enhance your CI workflow
+  website_url: https://codecov.io/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Code Coverage
+  image_url: https://img.stackshare.io/service/2673/Codecov_Mark_Circle_Pink.png
+  detection_source: workbench/libraries/reselect-master/reselect-master/codecov.yml
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source: Repo Metadata
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source: ".github/workflows/datadog-synthetics.yml"
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:43:29.000000000 Z
+- name: Prettier
+  description: 'Prettier is an opinionated code formatter. '
+  website_url: https://prettier.io/
+  version: 2.8.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-03 21:35:48.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: PowerShell
+  description: A task automation and configuration management framework
+  website_url: https://docs.microsoft.com/en-us/powershell/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/3681/powershell-logo.png
+  detection_source: Repo Metadata
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source: Repo Metadata
+- name: Ubuntu
+  description: The leading OS for PC, tablet, phone and cloud
+  website_url: http://www.ubuntu.com/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/3511/cof_orange_hex.jpg
+  detection_source: workbench/libraries/reselect-master/reselect-master/Dockerfile
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: XSLT
+  description: The official Twitter account for the sum of all knowledge, Wikipedia.
+    Overseen by @jeffelder.
+  website_url: https://en.wikipedia.org/wiki/XSLT
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/4253/nZXfdUQq_normal.jpg
+  detection_source: Repo Metadata
+- name: "@types/lodash"
+  description: TypeScript definitions for Lo-Dash
+  package_url: https://www.npmjs.com/@types/lodash
+  version: 4.14.200
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15945/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-04 05:05:15.000000000 Z
+- name: "@types/shelljs"
+  description: TypeScript definitions for ShellJS
+  package_url: https://www.npmjs.com/@types/shelljs
+  version: 0.8.14
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16927/default_243de814aae175a383b2d9fba99487a89879acdb.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-04 05:05:15.000000000 Z
+- name: "@typescript-eslint/eslint-plugin"
+  description: TypeScript plugin for ESLint
+  package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
+  version: 5.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-05 01:20:29.000000000 Z
+- name: "@typescript-eslint/parser"
+  description: An ESLint custom parser which leverages TypeScript ESTree
+  package_url: https://www.npmjs.com/@typescript-eslint/parser
+  version: 5.1.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-05 01:20:29.000000000 Z
+- name: eslint-plugin-react
+  description: React specific linting rules for ESLint
+  package_url: https://www.npmjs.com/eslint-plugin-react
+  version: 7.33.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15817/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-05 01:20:29.000000000 Z
+- name: eslint-plugin-typescript
+  description: TypeScript plugin for ESLint
+  package_url: https://www.npmjs.com/eslint-plugin-typescript
+  version: 0.14.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17077/default_43f23668e39c9b3381720c9c76540776b8a49167.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-05 01:20:29.000000000 Z
+- name: lodash.memoize
+  description: The lodash method `_.memoize` exported as a module
+  package_url: https://www.npmjs.com/lodash.memoize
+  version: 4.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18269/default_6800f6367903fa29136d7fd4684612bb5ba595a8.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-03 21:40:35.000000000 Z
+- name: memoize-one
+  description: A memoization library which only remembers the latest invocation
+  package_url: https://www.npmjs.com/memoize-one
+  version: 6.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17541/default_e665c133253b5cd434c1991167ebd25dc68f1c17.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: react-redux
+  description: Official React bindings for Redux
+  package_url: https://www.npmjs.com/react-redux
+  version: 8.1.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15984/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-03 21:35:48.000000000 Z
+- name: rimraf
+  description: A deep deletion module for node
+  package_url: https://www.npmjs.com/rimraf
+  version: 3.0.2
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: reconsumeralization
+  last_updated_on: 2023-11-03 21:30:10.000000000 Z
+- name: shelljs
+  description: Portable Unix shell commands for Node.js
+  package_url: https://www.npmjs.com/shelljs
+  version: 0.8.5
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15897/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: workbench/libraries/reselect-master/reselect-master/yarn.lock
+  detection_source: workbench/libraries/reselect-master/reselect-master/package.json
+  last_updated_by: depfu[bot]
+  last_updated_on: 2023-11-04 05:05:15.000000000 Z
