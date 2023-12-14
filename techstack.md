@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 reconsumeralization/CodeCurse is built on the following main stack:
+
 - [React](https://reactjs.org/) – Javascript UI Libraries
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - [TypeScript](http://www.typescriptlang.org) – Languages
@@ -14,14 +15,18 @@ reconsumeralization/CodeCurse is built on the following main stack:
 - [Yarn](https://yarnpkg.com/) – Front End Package Manager
 - [Prettier](https://prettier.io/) – Code Review
 - [GitHub Actions](https://github.com/features/actions) – Continuous Integration
+- [LangChain](https://github.com/hwchase17/langchain) – Large Language Model Tools
+- [pgvector](https://github.com/pgvector/pgvector/) – Database Tools
 - [Docker](https://www.docker.com/) – Virtual Machine Platforms & Containers
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 reconsumeralization/CodeCurse is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/1020/OYIaJ1KK.png' alt='React'/> [React](https://reactjs.org/) – Javascript UI Libraries
 - <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/1612/bynNY5dJ.jpg' alt='TypeScript'/> [TypeScript](http://www.typescriptlang.org) – Languages
@@ -34,17 +39,20 @@ reconsumeralization/CodeCurse is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/5848/44mC-kJ3.jpg' alt='Yarn'/> [Yarn](https://yarnpkg.com/) – Front End Package Manager
 - <img width='25' height='25' src='https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg' alt='Prettier'/> [Prettier](https://prettier.io/) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/11563/actions.png' alt='GitHub Actions'/> [GitHub Actions](https://github.com/features/actions) – Continuous Integration
+- <img width='25' height='25' src='https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg' alt='LangChain'/> [LangChain](https://github.com/hwchase17/langchain) – Large Language Model Tools
+- <img width='25' height='25' src='https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png' alt='pgvector'/> [pgvector](https://github.com/pgvector/pgvector/) – Database Tools
 - <img width='25' height='25' src='https://img.stackshare.io/service/586/n4u37v9t_400x400.png' alt='Docker'/> [Docker](https://www.docker.com/) – Virtual Machine Platforms & Containers
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [reconsumeralization/CodeCurse](https://github.com/reconsumeralization/CodeCurse)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|28<br/>Tools used|11/09/23 <br/>Report generated|
+|30<br/>Tools used|12/14/23 <br/>Report generated|
 |------|------|
 </div>
 
@@ -85,6 +93,19 @@ Full tech stack [here](/techstack.md)
   <sub><a href="https://redux.js.org/">Redux</a></sub>
   <br>
   <sub>v4.2.1</sub>
+</td>
+
+</tr>
+</table>
+
+## <img src='https://img.stackshare.io/databases.svg'/> Data (1)
+<table><tr>
+  <td align='center'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png' alt='pgvector'>
+  <br>
+  <sub><a href="https://github.com/pgvector/pgvector/">pgvector</a></sub>
+  <br>
+  <sub></sub>
 </td>
 
 </tr>
@@ -159,9 +180,17 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
-## Other (4)
+## Other (5)
 <table><tr>
   <td align='center'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg' alt='LangChain'>
+  <br>
+  <sub><a href="https://github.com/hwchase17/langchain">LangChain</a></sub>
+  <br>
+  <sub></sub>
+</td>
+
+<td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/3681/powershell-logo.png' alt='PowerShell'>
   <br>
   <sub><a href="https://docs.microsoft.com/en-us/powershell/">PowerShell</a></sub>
@@ -203,20 +232,20 @@ Full tech stack [here](/techstack.md)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
-|[@types/lodash](https://www.npmjs.com/@types/lodash)|v4.14.200|11/04/23|depfu[bot] |MIT|N/A|
-|[@types/shelljs](https://www.npmjs.com/@types/shelljs)|v0.8.14|11/04/23|depfu[bot] |MIT|N/A|
-|[@typescript-eslint/eslint-plugin](https://www.npmjs.com/@typescript-eslint/eslint-plugin)|v5.1.0|11/05/23|depfu[bot] |MIT|N/A|
-|[@typescript-eslint/parser](https://www.npmjs.com/@typescript-eslint/parser)|v5.1.0|11/05/23|depfu[bot] |BSD-2-Clause|N/A|
+|[@types/lodash](https://www.npmjs.com/@types/lodash)|v4.14.201|11/09/23|depfu[bot] |MIT|N/A|
+|[@types/shelljs](https://www.npmjs.com/@types/shelljs)|v0.8.15|11/09/23|depfu[bot] |MIT|N/A|
+|[@typescript-eslint/eslint-plugin](https://www.npmjs.com/@typescript-eslint/eslint-plugin)|v5.1.0|11/09/23|depfu[bot] |MIT|N/A|
+|[@typescript-eslint/parser](https://www.npmjs.com/@typescript-eslint/parser)|v5.1.0|11/09/23|depfu[bot] |BSD-2-Clause|N/A|
 |[eslint-plugin-react](https://www.npmjs.com/eslint-plugin-react)|v7.33.2|11/05/23|depfu[bot] |MIT|N/A|
-|[eslint-plugin-typescript](https://www.npmjs.com/eslint-plugin-typescript)|v0.14.0|11/05/23|depfu[bot] |MIT|N/A|
-|[lodash.memoize](https://www.npmjs.com/lodash.memoize)|v4.1.2|11/03/23|depfu[bot] |MIT|N/A|
+|[eslint-plugin-typescript](https://www.npmjs.com/eslint-plugin-typescript)|v0.14.0|11/09/23|depfu[bot] |MIT|N/A|
+|[lodash.memoize](https://www.npmjs.com/lodash.memoize)|v4.1.2|11/09/23|depfu[bot] |MIT|N/A|
 |[memoize-one](https://www.npmjs.com/memoize-one)|v6.0.0|11/03/23|reconsumeralization |MIT|N/A|
 |[react-dom](https://www.npmjs.com/react-dom)|v18.2.0|11/03/23|reconsumeralization |MIT|N/A|
 |[react-redux](https://www.npmjs.com/react-redux)|v8.1.3|11/03/23|depfu[bot] |MIT|N/A|
 |[rimraf](https://www.npmjs.com/rimraf)|v3.0.2|11/03/23|reconsumeralization |ISC|N/A|
-|[shelljs](https://www.npmjs.com/shelljs)|v0.8.5|11/04/23|depfu[bot] |BSD-3-Clause|N/A|
+|[shelljs](https://www.npmjs.com/shelljs)|v0.8.5|11/08/23|depfu[bot] |BSD-3-Clause|N/A|
 
 <br/>
 <div align='center'>
 
-Generated via [Stack File](https://github.com/apps/stack-file)
+Generated via [Stack File](https://github.com/marketplace/stack-file)
