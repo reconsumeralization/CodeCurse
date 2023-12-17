@@ -13,7 +13,7 @@ if [[ "${VSCODE_ARCH}" == "x64" ]]; then
   if [[ -z "${APPIMAGE_URL}" ]]; then
     echo "The url for pkg2appimage.AppImage hasn't been found"
     exit 1
-  fi
+  CodeCurse
 
   wget -c "${APPIMAGE_URL}" -O pkg2appimage.AppImage
 
