@@ -22,7 +22,7 @@ import { LanguageServerClient } from '../lsp/stdioClient'
 import { getConnections } from '../lsp/languageServerSlice'
 import {
     copilotServer,
-    docPathFacet,
+    AppFacet,
     offsetToPos,
     posToOffset,
 } from '../lsp/lspPlugin'
@@ -34,7 +34,7 @@ export const docPath = Facet.define<string, string>({
     },
 })
 
-export const relDocPath = Facet.define<string, string>({
+export const CodeCurseFacet = Facet.define<string, string>({
     combine(value: readonly string[]) {
         return value[value.length - 1]
     },
@@ -53,10 +53,10 @@ interface Suggestion {
 }
 
 // Effects to tell StateEffect what to do with GhostText
-const addSuggestion = StateEffect.define<Suggestion>()
-const acceptSuggestion = StateEffect.define<null>()
-const clearSuggestion = StateEffect.define<null>()
-const typeFirst = StateEffect.define<number>()
+const addCodeCurse = StateEffect.define<Suggestion>()
+const acceptCodeCurse = StateEffect.define<null>()
+const clearCodeCurse = StateEffect.define<null>()
+const typeCodeFirst = StateEffect.define<number>()
 
 interface CompletionState {
     ghostText: GhostText | null
@@ -74,7 +74,7 @@ interface GhostText {
     uuid: string
 }
 
-export const completionDecoration = StateField.define<CompletionState>({
+export const completionDecoration = StateField.define<CodeCurseState>({
     create(_state: EditorState) {
         return { ghostText: null }
     },
@@ -534,7 +534,7 @@ export const copilotBundle = ({
 }): Extension => [
     docPath.of(filePath),
     docPathFacet.of(filePath),
-    relDocPath.of(relativeFilePath),
+    CodeCurseFacet.of(relativeFilePath),
     completionDecoration,
     Prec.highest(completionPlugin(getConnections().copilot.client)),
     Prec.highest(viewCompletionPlugin(getConnections().copilot.client)),
