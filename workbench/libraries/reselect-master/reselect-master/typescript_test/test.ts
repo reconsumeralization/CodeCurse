@@ -368,7 +368,13 @@ function testParametricSelector() {
   selector4({ foo: 'fizz' }, 42)
 }
 
+/**
+ * This function tests the array argument and checks the behavior of the selectors.
+ */
 function testArrayArgument() {
+  // Creates a selector using an array of input selectors.
+  //
+  // @returns {Object} - An object containing the combined selector result.
   const selector = createSelector(
     [
       (state: { foo: string }) => state.foo,

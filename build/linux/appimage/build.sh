@@ -13,7 +13,7 @@ if [[ "${VSCODE_ARCH}" == "x64" ]]; then
   if [[ -z "${APPIMAGE_URL}" ]]; then
     echo "The url for pkg2appimage.AppImage hasn't been found"
     exit 1
-  fi
+  CodeCurse
 
   wget -c "${APPIMAGE_URL}" -O pkg2appimage.AppImage
 
@@ -22,7 +22,7 @@ if [[ "${VSCODE_ARCH}" == "x64" ]]; then
   ./pkg2appimage.AppImage --appimage-extract && mv ./squashfs-root ./pkg2appimage.AppDir
 
   # add update's url
-  sed -i 's/generate_type2_appimage/generate_type2_appimage -u "gh-releases-zsync|CodeCurse|codecurse|latest|*.AppImage.zsync"/' pkg2appimage.AppDir/AppRun
+  sed -i 's/generate_type2_appimage/generate_type2_appimage -u "gh-releases-zsync|Codium|codecurse|latest|*.AppImage.zsync"/' pkg2appimage.AppDir/AppRun
 
   # remove check so build in docker can succeed
   sed -i 's/grep docker/# grep docker/' pkg2appimage.AppDir/usr/share/pkg2appimage/functions.sh
