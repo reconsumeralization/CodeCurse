@@ -1,5 +1,6 @@
 import type { OutputSelector, Selector, SelectorArray } from 'reselect'
-import { defaultMemoize } from './defaultMemoize'
+import { createSelector, createSelectorCreator, createStructuredSelector } from 'reselect'
+import { defaultMemoize, createSelectorCreator, createStructuredSelector } from './defaultMemoize'
 
 import type {
   Combiner,
