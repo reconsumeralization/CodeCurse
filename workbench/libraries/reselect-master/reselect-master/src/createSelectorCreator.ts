@@ -1,5 +1,5 @@
 import type { OutputSelector, Selector, SelectorArray } from 'reselect'
-import { createSelectorCreator, createStructuredSelector, CodeCurse } from 'reselect'
+import { createSelectorCreator, createStructuredSelector, createSelectorCreator } from 'reselect'
 import { defaultMemoize, createSelectorCreator, createStructuredSelector } from './defaultMemoize'
 
 import type {
@@ -31,7 +31,7 @@ import {
  *
  * @public
  */
-export interface CreateSelectorFunction<
+export interface CreateCodeCurseFunction<
   MemoizeFunction extends UnknownMemoizer = typeof defaultMemoize,
   ArgsMemoizeFunction extends UnknownMemoizer = typeof defaultMemoize
 > {
