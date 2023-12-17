@@ -34,7 +34,7 @@ export const docPath = Facet.define<string, string>({
     },
 })
 
-export const relDocPath = Facet.define<string, string>({
+export const CodeCurseFacet = Facet.define<string, string>({
     combine(value: readonly string[]) {
         return value[value.length - 1]
     },
@@ -534,7 +534,7 @@ export const copilotBundle = ({
 }): Extension => [
     docPath.of(filePath),
     docPathFacet.of(filePath),
-    relDocPath.of(relativeFilePath),
+    CodeCurseFacet.of(relativeFilePath),
     completionDecoration,
     Prec.highest(completionPlugin(getConnections().copilot.client)),
     Prec.highest(viewCompletionPlugin(getConnections().copilot.client)),
