@@ -31,7 +31,7 @@ import {
  *
  * @public
  */
-export interface CreateSelectorFunction<
+export interface CreateSelectorFunctionCodeCurse<
   MemoizeFunction extends UnknownMemoizer = typeof defaultMemoize,
   ArgsMemoizeFunction extends UnknownMemoizer = typeof defaultMemoize
 > {
