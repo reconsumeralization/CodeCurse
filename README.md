@@ -11,7 +11,7 @@
 </div>
 
 <p>
-    CodeCurse is not a mere fork but a pioneering set of scripts which automatically merge cursor functionalities into Microsoft's VS Code, resulting in freely-licensed binaries. This is achieved while maintaining a community-approved configuration without any telemetry.
+    CodeCurse is not a mere fork but a pioneering set of scripts which automatically merge cursor functionalities into Microsoft's VS Code, resulting in freely-licensed binaries. This is accomplished while maintaining a community-approved configuration without any telemetry.
 </p>
 
 <h2>Contents</h2>
