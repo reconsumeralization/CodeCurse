@@ -1,7 +1,7 @@
 <!--
 --- Readme.md Snippet without images Start ---
 ## Tech Stack
-reconsumeralization/CodeCurse. is built on the following main stack:
+reconsumeralization/CodeCurse is built on the following main stack:
 - [React](https://reactjs.org/) – Javascript UI Libraries
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - [TypeScript](http://www.typescriptlang.org) – Languages
