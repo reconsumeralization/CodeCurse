@@ -1,4 +1,4 @@
-# How to build VSCodium
+# How to build Codium
 
 ## Table of Contents
 
