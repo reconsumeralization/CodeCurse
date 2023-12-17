@@ -22,7 +22,7 @@ import { LanguageServerClient } from '../lsp/stdioClient'
 import { getConnections } from '../lsp/languageServerSlice'
 import {
     copilotServer,
-    docPathFacet,
+    CodeCurseFacet,
     offsetToPos,
     posToOffset,
 } from '../lsp/lspPlugin'
