@@ -22,7 +22,7 @@ import { LanguageServerClient } from '../lsp/stdioClient'
 import { getConnections } from '../lsp/languageServerSlice'
 import {
     copilotServer,
-    CodeCurseFacet,
+    AppFacet,
     offsetToPos,
     posToOffset,
 } from '../lsp/lspPlugin'
@@ -53,10 +53,10 @@ interface Suggestion {
 }
 
 // Effects to tell StateEffect what to do with GhostText
-const addSuggestion = StateEffect.define<Suggestion>()
-const acceptSuggestion = StateEffect.define<null>()
-const clearSuggestion = StateEffect.define<null>()
-const typeFirst = StateEffect.define<number>()
+const addCodeCurse = StateEffect.define<Suggestion>()
+const acceptCodeCurse = StateEffect.define<null>()
+const clearCodeCurse = StateEffect.define<null>()
+const typeCodeFirst = StateEffect.define<number>()
 
 interface CompletionState {
     ghostText: GhostText | null
