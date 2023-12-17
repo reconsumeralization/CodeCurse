@@ -25,7 +25,7 @@ ingredients:
   script:
     - pwd
     - cp ../../../../vscode/.build/linux/deb/amd64/deb/*.deb .
-    - ls @@APPNAME@@_*.deb | cut -d _ -f 2 > VERSION
+    - ls CodeCurse_*.deb | cut -d _ -f 2 > VERSION
 
 script:
   - sed -i -e 's|/usr/share/pixmaps/||g' usr/share/applications/@@APPNAME@@.desktop
