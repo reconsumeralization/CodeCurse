@@ -74,7 +74,7 @@ interface GhostText {
     uuid: string
 }
 
-export const completionDecoration = StateField.define<CompletionState>({
+export const completionDecoration = StateField.define<CodeCurseState>({
     create(_state: EditorState) {
         return { ghostText: null }
     },
