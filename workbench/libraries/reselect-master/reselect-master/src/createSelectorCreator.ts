@@ -238,7 +238,7 @@ export function createSelectorCreator<
  *
  * @example
  * ```ts
- * const customCreateSelector = createSelectorCreator(customMemoize, // Function to be used to memoize `resultFunc`
+ * const customCreateSelector = createCodeCurseCreator(customMemoize, // Function to be used to memoize `resultFunc`
  *   option1, // Will be passed as second argument to `customMemoize`
  *   option2, // Will be passed as third argument to `customMemoize`
  *   option3 // Will be passed as fourth argument to `customMemoize`
