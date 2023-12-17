@@ -1,6 +1,6 @@
 <div id="codecurse-logo" style="text-align:center;">
     <img src="DALL·E 2023-11-03 17.41.56 - Design an icon representing the merger of two cursors (one from Microsoft's VS Code and another symbolizing enhanced functionality). The background sh.png" alt="CodeCurse Logo" width="200" />
-    <h1>CodeCurse</h1>
+    <h1>Codium</h1>
     <h3>The VSCodium Cursor Merger: An Open Source Enhancement without Telemetry</h3>
 </div>
 
