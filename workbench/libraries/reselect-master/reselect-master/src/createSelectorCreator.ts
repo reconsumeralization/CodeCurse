@@ -1,5 +1,5 @@
 import type { OutputSelector, Selector, SelectorArray } from 'reselect'
-import { CodeCurse, createSelectorCreator, createStructuredSelector } from 'reselect'
+import { createSelectorCreator, createStructuredSelector, CodeCurse } from 'reselect'
 import { defaultMemoize, createSelectorCreator, createStructuredSelector } from './defaultMemoize'
 
 import type {
