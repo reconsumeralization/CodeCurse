@@ -2,7 +2,7 @@ repo_name: reconsumeralization/CodeCurse
 report_id: 72cf510d3d878551fcdf7b1cf670b0c1
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-11T12:28:37+00:00'
+timestamp: '2024-02-29T18:12:35+00:00'
 requested_by: reconsumeralization
 provider: github
 branch: main
@@ -116,7 +116,7 @@ tools:
   last_updated_by: reconsumeralization
   last_updated_on: 2023-11-03 21:43:29.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.8.8
   license: MIT
