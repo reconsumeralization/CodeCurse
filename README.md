@@ -1,7 +1,9 @@
 <div id="codecurse-logo" style="text-align:center;">
     <img src="DALL·E 2023-11-03 17.41.56 - Design an icon representing the merger of two cursors (one from Microsoft's VS Code and another symbolizing enhanced functionality). The background sh.png" alt="CodeCurse Logo" width="200" />
+
     <h1>CodeCurse</h1>
-    <h3>The VSCodium Cursor Merger: An Open Source Enhancement without Telemetry</h3>
+    <h3>The VSCodium CodeCurse Merger: An Open Source Enhancement without Telemetry</h3>
+
 </div>
 
 <div id="badges" style="text-align:center;">
@@ -11,7 +13,7 @@
 </div>
 
 <p>
-    CodeCurse is not a mere fork but a pioneering set of scripts which automatically merge cursor functionalities into Microsoft's VS Code, resulting in freely-licensed binaries. This is achieved while maintaining a community-approved configuration without any telemetry.
+    CodeCurse is not a mere fork but a pioneering set of scripts which automatically merge cursor functionalities into Microsoft's VS Code, resulting in freely-licensed binaries. This is accomplished while maintaining a community-approved configuration without any telemetry.
 </p>
 
 <h2>Contents</h2>
