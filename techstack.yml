@@ -1,9 +1,9 @@
 
 repo_name: reconsumeralization/CodeCurse
-report_id: 2bb7a643a41483d284b93cbe004756aa
-
+report_id: 72cf510d3d878551fcdf7b1cf670b0c1
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T09:42:58+00:00'
+timestamp: '2024-02-29T18:12:35+00:00'
 requested_by: reconsumeralization
 provider: github
 branch: main
@@ -18,6 +18,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse
   detection_source: Repo Metadata
 - name: TypeScript
   description: A superset of JavaScript that compiles to clean JavaScript output
@@ -28,6 +29,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse
   detection_source: Repo Metadata
 - name: React
   description: A JavaScript library for building user interfaces
@@ -75,6 +77,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Coverage
   image_url: https://img.stackshare.io/service/2673/Codecov_Mark_Circle_Pink.png
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/codecov.yml
   detection_source: workbench/libraries/reselect-master/reselect-master/codecov.yml
   last_updated_by: reconsumeralization
   last_updated_on: 2023-11-03 21:30:10.000000000 Z
@@ -87,6 +90,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse
   detection_source: Repo Metadata
 - name: ESLint
   description: The fully pluggable JavaScript code quality tool
@@ -97,6 +101,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/package.json
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: reconsumeralization
   last_updated_on: 2023-11-03 21:30:10.000000000 Z
@@ -108,6 +113,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -121,7 +127,7 @@ tools:
   last_updated_by: reconsumeralization
   last_updated_on: 2023-11-03 21:43:29.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.8.8
   license: MIT
@@ -142,6 +148,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/yarn.lock
   detection_source: workbench/libraries/reselect-master/reselect-master/yarn.lock
   last_updated_by: depfu[bot]
   last_updated_on: 2023-11-03 21:35:48.000000000 Z
@@ -153,6 +160,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/package.json
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: reconsumeralization
   last_updated_on: 2023-11-03 21:30:10.000000000 Z
@@ -175,6 +183,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/3681/powershell-logo.png
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse
   detection_source: Repo Metadata
 - name: Shell
   description: A shell is a text-based terminal, used for manipulating programs and
@@ -185,6 +194,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse
   detection_source: Repo Metadata
 - name: Ubuntu
   description: The leading OS for PC, tablet, phone and cloud
@@ -194,6 +204,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Operating Systems
   image_url: https://img.stackshare.io/service/3511/cof_orange_hex.jpg
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/Dockerfile
   detection_source: workbench/libraries/reselect-master/reselect-master/Dockerfile
   last_updated_by: reconsumeralization
   last_updated_on: 2023-11-03 21:30:10.000000000 Z
@@ -204,11 +215,12 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/4253/nZXfdUQq_normal.jpg
+  detection_source_url: https://github.com/reconsumeralization/CodeCurse
   detection_source: Repo Metadata
 - name: "@types/lodash"
   description: TypeScript definitions for Lo-Dash
   package_url: https://www.npmjs.com/@types/lodash
-  version: 4.14.201
+  version: 4.14.202
   license: MIT
   open_source: true
   hosted_saas: false
@@ -218,7 +230,7 @@ tools:
   detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/yarn.lock
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: depfu[bot]
-  last_updated_on: 2023-11-09 18:00:32.000000000 Z
+  last_updated_on: 2023-11-22 07:35:33.000000000 Z
 - name: "@types/shelljs"
   description: TypeScript definitions for ShellJS
   package_url: https://www.npmjs.com/@types/shelljs
@@ -232,7 +244,6 @@ tools:
   detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/yarn.lock
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: depfu[bot]
-  last_updated_on: 2023-11-09 18:00:32.000000000 Z
 - name: "@typescript-eslint/eslint-plugin"
   description: TypeScript plugin for ESLint
   package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
@@ -246,7 +257,6 @@ tools:
   detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/yarn.lock
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: depfu[bot]
-  last_updated_on: 2023-11-09 18:00:32.000000000 Z
 - name: "@typescript-eslint/parser"
   description: An ESLint custom parser which leverages TypeScript ESTree
   package_url: https://www.npmjs.com/@typescript-eslint/parser
@@ -260,7 +270,6 @@ tools:
   detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/yarn.lock
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: depfu[bot]
-  last_updated_on: 2023-11-09 18:00:32.000000000 Z
 - name: eslint-plugin-react
   description: React specific linting rules for ESLint
   package_url: https://www.npmjs.com/eslint-plugin-react
@@ -274,7 +283,7 @@ tools:
   detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/yarn.lock
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: depfu[bot]
-  last_updated_on: 2023-11-05 01:20:29.000000000 Z
+  last_updated_on: 2023-12-17 01:00:21.000000000 Z
 - name: eslint-plugin-typescript
   description: TypeScript plugin for ESLint
   package_url: https://www.npmjs.com/eslint-plugin-typescript
@@ -288,7 +297,6 @@ tools:
   detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/yarn.lock
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: depfu[bot]
-  last_updated_on: 2023-11-09 18:00:32.000000000 Z
 - name: lodash.memoize
   description: The lodash method `_.memoize` exported as a module
   package_url: https://www.npmjs.com/lodash.memoize
@@ -302,7 +310,6 @@ tools:
   detection_source_url: https://github.com/reconsumeralization/CodeCurse/blob/main/workbench/libraries/reselect-master/reselect-master/yarn.lock
   detection_source: workbench/libraries/reselect-master/reselect-master/package.json
   last_updated_by: depfu[bot]
-  last_updated_on: 2023-11-09 18:00:32.000000000 Z
 - name: memoize-one
   description: A memoization library which only remembers the latest invocation
   package_url: https://www.npmjs.com/memoize-one
