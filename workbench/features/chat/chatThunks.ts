@@ -211,7 +211,7 @@ export async function getPayload({
 
     // Capture all `CODE_HERE` with regex from the last message
     const capturedSymbols = lastUserMessage.message
-        .match(/`(\w+\.*)+`/g)
+        .match(/`(\w+\.?)+`/g)
         ?.map((symbol) => symbol.replace(/`/g, ''))
     // Convert to a set
     const codeSymbols = new Set<string>()
